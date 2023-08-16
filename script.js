@@ -2,6 +2,8 @@
 let addBtn = document.querySelector("button");
 let textInput = document.getElementById("textinput");
 
+
+
 addBtn.addEventListener("click", () => {
   let inputValue = textInput.value;
   if (inputValue !== "") {
@@ -18,6 +20,8 @@ addBtn.addEventListener("click", () => {
     let editBtn = newElement.querySelector(".editBtn");
     let spanElement = newElement.querySelector("span");
 
+
+
     editBtn.addEventListener("click", () => {
       spanElement.setAttribute("contenteditable", true);
       spanElement.focus();
@@ -32,6 +36,9 @@ addBtn.addEventListener("click", () => {
     let checkBox = document.querySelector(".form-check-input");
     let completedList = document.querySelector("#Completed");
 
+
+
+
     checkBox.addEventListener("click", () => {
       if (checkBox.checked) {
         let completedItem = newElement.cloneNode(true);
@@ -39,6 +46,8 @@ addBtn.addEventListener("click", () => {
           "line-through";
         completedList.appendChild(completedItem);
         newElement.remove();
+
+        
 
         let deleteBtn = document.querySelector(".deleteBtn");
         let deleteSection = document.querySelector("#delete");
